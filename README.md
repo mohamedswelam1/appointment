@@ -33,7 +33,7 @@ A RESTful API built with NestJS, PostgreSQL, and Prisma that allows service prov
 ### Prerequisites
 
 - Node.js (v14+)
-- npm or yarn
+- pnpm 
 - PostgreSQL database
 - Docker and Docker Compose (optional, for containerized setup)
 
@@ -49,7 +49,7 @@ A RESTful API built with NestJS, PostgreSQL, and Prisma that allows service prov
 
 2. Install dependencies
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. Set up environment variables
@@ -77,11 +77,11 @@ A RESTful API built with NestJS, PostgreSQL, and Prisma that allows service prov
 5. Start the application
    ```bash
    # development
-   npm run start:dev
+   pnpm run start:dev
    
    # production
-   npm run build
-   npm run start:prod
+   pnpm run build
+   pnpm run start:prod
    ```
 
 #### Docker Setup
@@ -163,16 +163,17 @@ http://localhost:3000/docs
 
 ```bash
 # unit tests
-npm run test
+pnpm run test
 
 # e2e tests
-npm run test:e2e
+pnpm run test:e2e
 
 # test coverage
-npm run test:cov
+pnpm run test:cov
 ```
 
 ## License
 
 This project is licensed under the MIT License.
+# appointment
 # appointment
