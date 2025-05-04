@@ -26,7 +26,6 @@ A RESTful API built with NestJS, PostgreSQL, and Prisma that allows service prov
 - Class Validator & Class Transformer - DTO validation
 - Node-cron - Scheduling background tasks
 - Nodemailer - Sending email notifications
-- Docker - Containerization
 
 ## Setup
 
@@ -35,7 +34,6 @@ A RESTful API built with NestJS, PostgreSQL, and Prisma that allows service prov
 - Node.js (v14+)
 - pnpm 
 - PostgreSQL database
-- Docker and Docker Compose (optional, for containerized setup)
 
 ### Installation
 
@@ -82,53 +80,6 @@ A RESTful API built with NestJS, PostgreSQL, and Prisma that allows service prov
    # production
    pnpm run build
    pnpm run start:prod
-   ```
-
-#### Docker Setup
-
-1. Clone the repository
-   ```bash
-   git clone <repository-url>
-   cd fincart-appointment-api
-   ```
-
-2. Using Docker Compose directly:
-
-   Development Environment
-   ```bash
-   # Start the application in development mode
-   docker-compose -f docker-compose.dev.yml up -d
-   ```
-
-   Production Environment
-   ```bash
-   # Build and start the application in production mode
-   docker-compose up -d
-   ```
-
-3. Using the provided Makefile (easier):
-
-   ```bash
-   # Start development environment
-   make dev
-
-   # Start production environment
-   make prod
-
-   # Stop all containers
-   make down
-
-   # View logs in development
-   make logs-dev
-
-   # View logs in production
-   make logs-prod
-
-   # Run migrations in development
-   make migrate-dev
-
-   # Run migrations in production
-   make migrate-prod
    ```
 
 ## API Documentation
